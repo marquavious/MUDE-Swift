@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  Picky
+//  Hue App
 //
 //  Created by Swayam Barik on 7/7/16.
 //  Copyright © 2016 Swayam Barik. All rights reserved.
@@ -8,6 +8,10 @@
 
 
 import UIKit
+import SwiftyJSON
+import Alamofire
+import AlamofireImage
+import AlamofireNetworkActivityIndicator
 
 var defaultCategories: [String] = ["Rap", "Country", "Classic"]
 
@@ -19,6 +23,26 @@ class ViewController: UIViewController{
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        var artistName = "drake"
+        var songName = "views"
+        
+        let apiToContact = "http://api.lyricsnmusic.com/songs?api_key=[7f20218fb1ab86aff7aa7f9d25df56]&q=\(artistName)%20\(songName)"
+        
+        // This code will call the iTunes top 25 movies endpoint listed above
+        Alamofire.request(.GET, apiToContact).validate().responseJSON() { response in
+            switch response.result {
+            case .Success:
+                if let value = response.result.value {
+                    let songData = JSON(value)
+                    //let allMoviesData = moviesData["feed"]["entry"].arrayValue
+                    print("---------------------------------")
+                    print(songData)
+                }
+            case .Failure(let error):
+                
+                print(error)
+            }
+        }
     }
     
     override func didReceiveMemoryWarning() {

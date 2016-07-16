@@ -283,7 +283,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w43-Ud-xe7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="440" y="978"/>
+            <point key="canvasLocation" x="487" y="1204"/>
         </scene>
         <!--Bridge Selection View Controller-->
         <scene sceneID="WNe-tM-m7P">

@@ -6,7 +6,8 @@ target 'Hue Quick Start iOS Swift' do
   use_frameworks!
 
   # Pods for Hue Quick Start iOS Swift
-	pod ‘SwiftyJSON’
+	pod “SwiftyJSON”
 	pod 'Alamofire', '~> 3.4'
-	
+	 pod ‘AlamofireImage’
+	pod ‘AlamofireNetworkActivityIndicator’
 end
