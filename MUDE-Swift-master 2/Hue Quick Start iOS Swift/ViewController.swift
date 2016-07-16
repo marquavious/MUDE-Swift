@@ -15,7 +15,7 @@ import AlamofireNetworkActivityIndicator
 import ToneAnalyzerV3
 
 var defaultCategories: [String] = ["Rap", "Country", "Classic"]
-
+var moodsChosen: [(String, String)] = []
 var categories: [String] = []
 var lyrics = ""
 var angerScore = ("", "angerScore")
@@ -112,7 +112,8 @@ class ViewController: UIViewController{
                             
                                 print(array)
                                 
-                                var moodsChosen: [(String, String)] = []
+                                //var moodsChosen: [(String, String)] = []
+                                moodsChosen = []
                                 var x = 4
                                 while x > 1{
                                     moodsChosen.append(array[x])
@@ -120,25 +121,26 @@ class ViewController: UIViewController{
                                 }
                                 print("MOODS CHOSEN: \(moodsChosen)")
                                 
-                                for mood in moodsChosen{
-                                    if mood.1 == "angerScore"{
-                                    //set lighitng sit
-                                        self.assignColor(angerScore.1, bulb: 0)
-                                    }
-                                    else if mood.1 == "disgustScore"{
-                                        self.assignColor(angerScore.1, bulb: 0)
-                                    }
-                                    else if mood.1 == "fearScore"{
-                                        self.assignColor(angerScore.1, bulb: 0)
-                                    }
-                                    else if mood.1 == "joyScore"{
-                                        self.assignColor(angerScore.1, bulb: 0)
-                                    }
-                                    else{
-                                        self.assignColor(angerScore.1, bulb: 0)
-                                    }
-                                    
-                                }
+                                self.assignColor()
+//                                for mood in moodsChosen{
+//                                    if mood.1 == "angerScore"{
+//                                    //set lighitng sit
+//                                        self.assignColor()
+//                                    }
+//                                    else if mood.1 == "disgustScore"{
+//                                        self.assignColor()
+//                                    }
+//                                    else if mood.1 == "fearScore"{
+//                                        self.assignColor()
+//                                    }
+//                                    else if mood.1 == "joyScore"{
+//                                        self.assignColor()
+//                                    }
+//                                    else{
+//                                        self.assignColor()
+//                                    }
+//                                    
+//                                }
                             }
                             catch {
                                 print("Problem serialising JSON object")
@@ -173,10 +175,16 @@ class ViewController: UIViewController{
 
     }
     
-    func assignColor(input: String, bulb: Int){
+    func assignColor(){
         let cache = PHBridgeResourcesReader.readBridgeResourcesCache()
         let bridgeSendAPI = PHBridgeSendAPI()
         let maxHue = 65000
+        var count = 0;
+        var arrayCounter: [String] = []
+        for moods in moodsChosen{
+            arrayCounter.append(moods.1)
+        }
+        
         
         for light in cache!.lights!.values {
             // don't update state of non-reachable lights
@@ -186,12 +194,32 @@ class ViewController: UIViewController{
             
             let lightState = PHLightState()
             
+                if  arrayCounter[0] == "angerScore"{
+                    lightState.hue = 65280 //red
+                }
+                else if arrayCounter[0] == "disgustScore"
+                {
+                    lightState.hue = 56100 //purple
+                }
+                else if arrayCounter[0] == "fearScore"
+                {
+                    lightState.hue = 25500 //green
+                }
+                else if arrayCounter[0] == "joyScore"
+                {
+                    lightState.hue = 12750 //yellow
+                }
+                else{
+                    lightState.hue = 46920 //blue
+                }
+                
+            
             
             //        if light.type.value == DIM_LIGHT.rawValue {
             //        // Lux bulbs just get a random brightness
             //        lightState.brightness = Int(arc4random()) % 254
             //      } else {
-            lightState.hue = Int(arc4random()) % maxHue
+            
             lightState.brightness = 254
             lightState.saturation = 254
             //}
@@ -205,6 +233,10 @@ class ViewController: UIViewController{
                 }
                 //self.randomLightsButton?.enabled = true
             })
+        
+            arrayCounter.removeAtIndex(0)
+            
+            
         }
 
     }
