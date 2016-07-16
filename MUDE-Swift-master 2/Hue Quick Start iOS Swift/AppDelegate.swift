@@ -29,6 +29,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     navigationController = window!.rootViewController as? UINavigationController
     
+    navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+    
     // The SDK will send the following notifications in response to events:
     //
     // - LOCAL_CONNECTION_NOTIFICATION
