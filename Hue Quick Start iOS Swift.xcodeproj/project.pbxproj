@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4E227CE1D39FD2D00814DEC /* GenreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E227CD1D39FD2D00814DEC /* GenreTableViewController.swift */; };
 		DE625B571A7078D8004296E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE625B561A7078D8004296E9 /* AppDelegate.swift */; };
 		DE625B5F1A7078D8004296E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE625B5D1A7078D8004296E9 /* Main.storyboard */; };
 		DE625B611A7078D8004296E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE625B601A7078D8004296E9 /* Images.xcassets */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C4E227CD1D39FD2D00814DEC /* GenreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenreTableViewController.swift; sourceTree = "<group>"; };
 		DE625B511A7078D8004296E9 /* Hue Quick Start iOS Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hue Quick Start iOS Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE625B551A7078D8004296E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE625B561A7078D8004296E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				DE625B9E1A707BC3004296E9 /* Hue Quick Start iOS Swift-Bridging-Header.h */,
 				DE625BB81A707E59004296E9 /* ControlLightsViewController.swift */,
 				DE67127C1A79B1B500ED6035 /* BridgePushLinkViewController.swift */,
+				C4E227CD1D39FD2D00814DEC /* GenreTableViewController.swift */,
 				DE6712801A79B7A300ED6035 /* BridgeSelectionViewController.swift */,
 				DE6712821A79B8EE00ED6035 /* LoadingViewController.swift */,
 			);
@@ -230,6 +233,7 @@
 				DE625BB11A707BE7004296E9 /* DDAbstractDatabaseLogger.m in Sources */,
 				DE625BB51A707BE7004296E9 /* DDTTYLogger.m in Sources */,
 				DE6712811A79B7A300ED6035 /* BridgeSelectionViewController.swift in Sources */,
+				C4E227CE1D39FD2D00814DEC /* GenreTableViewController.swift in Sources */,
 				DE625BB31A707BE7004296E9 /* DDFileLogger.m in Sources */,
 				DE67127D1A79B1B500ED6035 /* BridgePushLinkViewController.swift in Sources */,
 				DE625BB61A707BE7004296E9 /* ContextFilterLogFormatter.m in Sources */,
