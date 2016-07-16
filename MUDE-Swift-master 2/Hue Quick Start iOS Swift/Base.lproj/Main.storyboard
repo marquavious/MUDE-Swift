@@ -112,8 +112,8 @@
                                     <rect key="frame" x="395" y="145" width="145" height="21"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mz8-A2-LHv">
-                                <rect key="frame" x="199" y="326" width="79" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mz8-A2-LHv">
+                                <rect key="frame" x="199" y="326" width="101" height="36"/>
                                 <state key="normal" title="Let's Pulse!"/>
                                 <connections>
                                     <segue destination="Fba-lu-SVZ" kind="show" id="ZJh-7G-HVk"/>
@@ -142,6 +142,7 @@
                             <constraint firstItem="kgd-ti-N6j" firstAttribute="top" secondItem="mHg-bH-WcB" secondAttribute="bottom" constant="50" id="SIP-7g-aMC"/>
                             <constraint firstItem="vGm-Zn-wVB" firstAttribute="top" secondItem="kgd-ti-N6j" secondAttribute="bottom" constant="10" id="Whr-XA-EVF"/>
                             <constraint firstItem="Qb4-QO-eCd" firstAttribute="leading" secondItem="mHg-bH-WcB" secondAttribute="leading" id="ad9-vS-ash"/>
+                            <constraint firstItem="Mz8-A2-LHv" firstAttribute="top" secondItem="HbU-lh-2Dz" secondAttribute="bottom" constant="62" id="fxp-pa-at8"/>
                             <constraint firstItem="woR-Xs-hTP" firstAttribute="leading" secondItem="fdX-P1-5e4" secondAttribute="leading" constant="285" id="i6R-Tu-iI7">
                                 <variation key="heightClass=regular-widthClass=regular" constant="200"/>
                             </constraint>
@@ -156,6 +157,8 @@
                             <constraint firstAttribute="centerX" secondItem="HbU-lh-2Dz" secondAttribute="centerX" constant="61.5" id="ndY-wa-Dxw"/>
                             <constraint firstItem="woR-Xs-hTP" firstAttribute="baseline" secondItem="kgd-ti-N6j" secondAttribute="baseline" id="nkC-Ri-WkG"/>
                             <constraint firstItem="vGm-Zn-wVB" firstAttribute="top" secondItem="kgd-ti-N6j" secondAttribute="bottom" constant="8" symbolic="YES" id="oXO-Hk-lrk"/>
+                            <constraint firstItem="Mz8-A2-LHv" firstAttribute="leading" secondItem="HbU-lh-2Dz" secondAttribute="trailing" constant="-126" id="obq-hP-yHY"/>
+                            <constraint firstItem="Mz8-A2-LHv" firstAttribute="centerX" secondItem="fdX-P1-5e4" secondAttribute="centerX" id="sz0-Qx-eY5"/>
                             <constraint firstAttribute="centerX" secondItem="woR-Xs-hTP" secondAttribute="centerX" id="zvn-Ia-sKq"/>
                         </constraints>
                         <variation key="default">
@@ -175,6 +178,7 @@
                                 <exclude reference="5EN-aA-4nT"/>
                                 <exclude reference="i6R-Tu-iI7"/>
                                 <exclude reference="zvn-Ia-sKq"/>
+                                <exclude reference="sz0-Qx-eY5"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
@@ -266,7 +270,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q0Z-cI-VQY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="147" y="1065"/>
+            <point key="canvasLocation" x="-171" y="1123"/>
         </scene>
         <!--Old View Controller-->
         <scene sceneID="jNj-7E-Pii">
@@ -353,7 +357,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w43-Ud-xe7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="797" y="1186"/>
+            <point key="canvasLocation" x="1135" y="1098"/>
         </scene>
         <!--Bridge Selection View Controller-->
         <scene sceneID="WNe-tM-m7P">
