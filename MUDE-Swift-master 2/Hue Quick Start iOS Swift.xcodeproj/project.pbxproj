@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		C41E0B491D3A034A00DAEACE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E0B481D3A034A00DAEACE /* ViewController.swift */; };
+		C499C57B1D3A73FB005D6C78 /* ToneAnalyzerV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C499C5791D3A73FB005D6C78 /* ToneAnalyzerV3.framework */; };
+		C499C57C1D3A73FB005D6C78 /* ToneAnalyzerV3.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = C499C57A1D3A73FB005D6C78 /* ToneAnalyzerV3.framework.dSYM */; };
+		C499C57F1D3A7471005D6C78 /* Freddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C499C57D1D3A7471005D6C78 /* Freddy.framework */; };
+		C499C5801D3A7471005D6C78 /* Freddy.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = C499C57E1D3A7471005D6C78 /* Freddy.framework.dSYM */; };
+		C499C5831D3A7481005D6C78 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C499C5811D3A7481005D6C78 /* RestKit.framework */; };
+		C499C5841D3A7481005D6C78 /* RestKit.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = C499C5821D3A7481005D6C78 /* RestKit.framework.dSYM */; };
+		C499C5881D3A75B5005D6C78 /* ToneAnalyzerV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C499C5791D3A73FB005D6C78 /* ToneAnalyzerV3.framework */; };
+		C499C5891D3A75B5005D6C78 /* ToneAnalyzerV3.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C499C5791D3A73FB005D6C78 /* ToneAnalyzerV3.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C499C58B1D3A75CB005D6C78 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C499C5811D3A7481005D6C78 /* RestKit.framework */; };
+		C499C58C1D3A75CB005D6C78 /* RestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C499C5811D3A7481005D6C78 /* RestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C499C58D1D3A75DD005D6C78 /* Freddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C499C57D1D3A7471005D6C78 /* Freddy.framework */; };
+		C499C58E1D3A75DD005D6C78 /* Freddy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C499C57D1D3A7471005D6C78 /* Freddy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D0147ED6BF3FBF136ACDB4F8 /* Pods_Hue_Quick_Start_iOS_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18184C5287F87424028A9937 /* Pods_Hue_Quick_Start_iOS_Swift.framework */; };
 		DE625B571A7078D8004296E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE625B561A7078D8004296E9 /* AppDelegate.swift */; };
 		DE625B5F1A7078D8004296E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE625B5D1A7078D8004296E9 /* Main.storyboard */; };
@@ -28,10 +40,32 @@
 		DE8575771A7B0A0100FFED44 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = DE8575761A7B0A0100FFED44 /* README.md */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C499C58A1D3A75B5005D6C78 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C499C5891D3A75B5005D6C78 /* ToneAnalyzerV3.framework in Embed Frameworks */,
+				C499C58E1D3A75DD005D6C78 /* Freddy.framework in Embed Frameworks */,
+				C499C58C1D3A75CB005D6C78 /* RestKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		18184C5287F87424028A9937 /* Pods_Hue_Quick_Start_iOS_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hue_Quick_Start_iOS_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8688AE5B1D0553EE6E634B04 /* Pods-Hue Quick Start iOS Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hue Quick Start iOS Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hue Quick Start iOS Swift/Pods-Hue Quick Start iOS Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		C41E0B481D3A034A00DAEACE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C499C5791D3A73FB005D6C78 /* ToneAnalyzerV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ToneAnalyzerV3.framework; sourceTree = "<group>"; };
+		C499C57A1D3A73FB005D6C78 /* ToneAnalyzerV3.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = ToneAnalyzerV3.framework.dSYM; sourceTree = "<group>"; };
+		C499C57D1D3A7471005D6C78 /* Freddy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Freddy.framework; sourceTree = "<group>"; };
+		C499C57E1D3A7471005D6C78 /* Freddy.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = Freddy.framework.dSYM; sourceTree = "<group>"; };
+		C499C5811D3A7481005D6C78 /* RestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RestKit.framework; sourceTree = "<group>"; };
+		C499C5821D3A7481005D6C78 /* RestKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = RestKit.framework.dSYM; sourceTree = "<group>"; };
 		C6992F71D885E7762A6C743B /* Pods-Hue Quick Start iOS Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hue Quick Start iOS Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hue Quick Start iOS Swift/Pods-Hue Quick Start iOS Swift.release.xcconfig"; sourceTree = "<group>"; };
 		DE625B511A7078D8004296E9 /* Hue Quick Start iOS Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hue Quick Start iOS Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE625B551A7078D8004296E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,7 +101,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C499C57B1D3A73FB005D6C78 /* ToneAnalyzerV3.framework in Frameworks */,
+				C499C5831D3A7481005D6C78 /* RestKit.framework in Frameworks */,
+				C499C58D1D3A75DD005D6C78 /* Freddy.framework in Frameworks */,
+				C499C58B1D3A75CB005D6C78 /* RestKit.framework in Frameworks */,
 				DE625B941A70794A004296E9 /* HueSDK_iOS.framework in Frameworks */,
+				C499C5881D3A75B5005D6C78 /* ToneAnalyzerV3.framework in Frameworks */,
+				C499C57F1D3A7471005D6C78 /* Freddy.framework in Frameworks */,
 				D0147ED6BF3FBF136ACDB4F8 /* Pods_Hue_Quick_Start_iOS_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +136,12 @@
 			isa = PBXGroup;
 			children = (
 				DE8575761A7B0A0100FFED44 /* README.md */,
+				C499C5791D3A73FB005D6C78 /* ToneAnalyzerV3.framework */,
+				C499C57A1D3A73FB005D6C78 /* ToneAnalyzerV3.framework.dSYM */,
+				C499C57D1D3A7471005D6C78 /* Freddy.framework */,
+				C499C57E1D3A7471005D6C78 /* Freddy.framework.dSYM */,
+				C499C5811D3A7481005D6C78 /* RestKit.framework */,
+				C499C5821D3A7481005D6C78 /* RestKit.framework.dSYM */,
 				DE625B791A7078F5004296E9 /* Framework */,
 				DE625B531A7078D8004296E9 /* Hue Quick Start iOS Swift */,
 				DE625B521A7078D8004296E9 /* Products */,
@@ -189,6 +235,7 @@
 				DE625B4F1A7078D8004296E9 /* Resources */,
 				F4E1EF6858666D420F79BD40 /* [CP] Embed Pods Frameworks */,
 				43384D56B9E215047280A39D /* [CP] Copy Pods Resources */,
+				C499C58A1D3A75B5005D6C78 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -239,7 +286,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE625B5F1A7078D8004296E9 /* Main.storyboard in Resources */,
+				C499C57C1D3A73FB005D6C78 /* ToneAnalyzerV3.framework.dSYM in Resources */,
 				DE625B641A7078D8004296E9 /* LaunchScreen.xib in Resources */,
+				C499C5841D3A7481005D6C78 /* RestKit.framework.dSYM in Resources */,
+				C499C5801D3A7471005D6C78 /* Freddy.framework.dSYM in Resources */,
 				DE625B611A7078D8004296E9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,7 +407,9 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -372,7 +424,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
@@ -401,8 +453,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/**";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -410,7 +464,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;

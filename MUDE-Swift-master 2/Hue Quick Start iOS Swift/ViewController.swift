@@ -12,6 +12,7 @@ import SwiftyJSON
 import Alamofire
 import AlamofireImage
 import AlamofireNetworkActivityIndicator
+import ToneAnalyzerV3
 
 var defaultCategories: [String] = ["Rap", "Country", "Classic"]
 
@@ -58,6 +59,59 @@ class ViewController: UIViewController{
                     print(songData)
                     lyrics = songData[0]["snippet"].stringValue
                     print("LYRICS: \(lyrics)")
+                    
+                    var username = "42211623-0b7b-44f2-a65f-7b085f7148e6"
+                    var password = "CLiQuxU3MuIj"
+                    var endpoint = "https://gateway.watsonplatform.net/tone-analyzer/api/v3/tone?version=2016-05-19&text="
+                    
+                    var sampleText = lyrics
+                    
+                    // -------------------------------------------------------------------
+                    
+                    var authString = username + ":" + password
+                    var authData = authString.dataUsingEncoding(NSASCIIStringEncoding)
+                    var authValue = "Basic " + authData!.base64EncodedStringWithOptions(NSDataBase64EncodingOptions(rawValue: 0))
+                    
+                    var toneUrl = endpoint + sampleText.stringByAddingPercentEncodingWithAllowedCharacters(.URLHostAllowedCharacterSet())!
+                    let url = NSURL(string: toneUrl)
+                    
+                    let config = NSURLSessionConfiguration.defaultSessionConfiguration()
+                    config.HTTPAdditionalHeaders = ["Authorization" : authValue]
+                    let session = NSURLSession(configuration: config)
+                    
+                    var taskIsRunning = true;
+                    let task = session.dataTaskWithURL(url!) {
+                        (let data, let response, let error) in
+                        if let httpResponse = response as? NSHTTPURLResponse {
+                            do {
+                                let json = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)
+                                
+                                // Work with JSON object.
+                                print(json)
+                            }
+                            catch {
+                                print("Problem serialising JSON object")
+                            }
+                        }
+                        taskIsRunning = false
+                    }
+                    
+                    task.resume()
+                    while (taskIsRunning) {
+                        sleep(1)
+                    }
+                    
+    //                let username = "42211623-0b7b-44f2-a65f-7b085f7148e6"
+    //                let password = "CLiQuxU3MuIj"
+     //               let version = "2016-07-16" // use today's date for the most recent version
+    //                let toneAnalyzer = ToneAnalyzer(username: username, password: password, version: version)
+                    
+     //               let text = lyrics
+     //               let failure = { (error: NSError) in print(error) }
+     //               toneAnalyzer.getTone(text, failure: failure) { tones in
+     //                   print(tones)
+                  //  }
+
                     
                 }
             case .Failure(let error):
