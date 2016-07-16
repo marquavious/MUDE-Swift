@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE625B571A7078D8004296E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE625B561A7078D8004296E9 /* AppDelegate.swift */; };
+		DE625B5F1A7078D8004296E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE625B5D1A7078D8004296E9 /* Main.storyboard */; };
+		DE625B611A7078D8004296E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE625B601A7078D8004296E9 /* Images.xcassets */; };
+		DE625B641A7078D8004296E9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE625B621A7078D8004296E9 /* LaunchScreen.xib */; };
+		DE625B941A70794A004296E9 /* HueSDK_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE625B931A70794A004296E9 /* HueSDK_iOS.framework */; };
+		DE625BB11A707BE7004296E9 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = DE625BA31A707BE7004296E9 /* DDAbstractDatabaseLogger.m */; };
+		DE625BB21A707BE7004296E9 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = DE625BA51A707BE7004296E9 /* DDASLLogger.m */; };
+		DE625BB31A707BE7004296E9 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = DE625BA71A707BE7004296E9 /* DDFileLogger.m */; };
+		DE625BB41A707BE7004296E9 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = DE625BA91A707BE7004296E9 /* DDLog.m */; };
+		DE625BB51A707BE7004296E9 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = DE625BAB1A707BE7004296E9 /* DDTTYLogger.m */; };
+		DE625BB61A707BE7004296E9 /* ContextFilterLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = DE625BAE1A707BE7004296E9 /* ContextFilterLogFormatter.m */; };
+		DE625BB71A707BE7004296E9 /* DispatchQueueLogFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = DE625BB01A707BE7004296E9 /* DispatchQueueLogFormatter.m */; };
+		DE625BB91A707E59004296E9 /* ControlLightsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE625BB81A707E59004296E9 /* ControlLightsViewController.swift */; };
+		DE67127D1A79B1B500ED6035 /* BridgePushLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE67127C1A79B1B500ED6035 /* BridgePushLinkViewController.swift */; };
+		DE6712811A79B7A300ED6035 /* BridgeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6712801A79B7A300ED6035 /* BridgeSelectionViewController.swift */; };
+		DE6712831A79B8EE00ED6035 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6712821A79B8EE00ED6035 /* LoadingViewController.swift */; };
+		DE8575771A7B0A0100FFED44 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = DE8575761A7B0A0100FFED44 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DE625B511A7078D8004296E9 /* Hue Quick Start iOS Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hue Quick Start iOS Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE625B551A7078D8004296E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE625B561A7078D8004296E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE625B5E1A7078D8004296E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE625B601A7078D8004296E9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DE625B631A7078D8004296E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DE625B931A70794A004296E9 /* HueSDK_iOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HueSDK_iOS.framework; sourceTree = "<group>"; };
+		DE625B9E1A707BC3004296E9 /* Hue Quick Start iOS Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hue Quick Start iOS Swift-Bridging-Header.h"; sourceTree = "<group>"; };
+		DE625BA21A707BE7004296E9 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		DE625BA31A707BE7004296E9 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		DE625BA41A707BE7004296E9 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		DE625BA51A707BE7004296E9 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		DE625BA61A707BE7004296E9 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		DE625BA71A707BE7004296E9 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		DE625BA81A707BE7004296E9 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		DE625BA91A707BE7004296E9 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		DE625BAA1A707BE7004296E9 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		DE625BAB1A707BE7004296E9 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		DE625BAD1A707BE7004296E9 /* ContextFilterLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextFilterLogFormatter.h; sourceTree = "<group>"; };
+		DE625BAE1A707BE7004296E9 /* ContextFilterLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContextFilterLogFormatter.m; sourceTree = "<group>"; };
+		DE625BAF1A707BE7004296E9 /* DispatchQueueLogFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DispatchQueueLogFormatter.h; sourceTree = "<group>"; };
+		DE625BB01A707BE7004296E9 /* DispatchQueueLogFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DispatchQueueLogFormatter.m; sourceTree = "<group>"; };
+		DE625BB81A707E59004296E9 /* ControlLightsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlLightsViewController.swift; sourceTree = "<group>"; };
+		DE67127C1A79B1B500ED6035 /* BridgePushLinkViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgePushLinkViewController.swift; sourceTree = "<group>"; };
+		DE6712801A79B7A300ED6035 /* BridgeSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BridgeSelectionViewController.swift; sourceTree = "<group>"; };
+		DE6712821A79B8EE00ED6035 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		DE8575761A7B0A0100FFED44 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE625B4E1A7078D8004296E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE625B941A70794A004296E9 /* HueSDK_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE625B481A7078D8004296E9 = {
+			isa = PBXGroup;
+			children = (
+				DE8575761A7B0A0100FFED44 /* README.md */,
+				DE625B791A7078F5004296E9 /* Framework */,
+				DE625B531A7078D8004296E9 /* Hue Quick Start iOS Swift */,
+				DE625B521A7078D8004296E9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE625B521A7078D8004296E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE625B511A7078D8004296E9 /* Hue Quick Start iOS Swift.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE625B531A7078D8004296E9 /* Hue Quick Start iOS Swift */ = {
+			isa = PBXGroup;
+			children = (
+				DE625B561A7078D8004296E9 /* AppDelegate.swift */,
+				DE625B5D1A7078D8004296E9 /* Main.storyboard */,
+				DE625B601A7078D8004296E9 /* Images.xcassets */,
+				DE625B621A7078D8004296E9 /* LaunchScreen.xib */,
+				DE625B541A7078D8004296E9 /* Supporting Files */,
+				DE625B9E1A707BC3004296E9 /* Hue Quick Start iOS Swift-Bridging-Header.h */,
+				DE625BB81A707E59004296E9 /* ControlLightsViewController.swift */,
+				DE67127C1A79B1B500ED6035 /* BridgePushLinkViewController.swift */,
+				DE6712801A79B7A300ED6035 /* BridgeSelectionViewController.swift */,
+				DE6712821A79B8EE00ED6035 /* LoadingViewController.swift */,
+			);
+			path = "Hue Quick Start iOS Swift";
+			sourceTree = "<group>";
+		};
+		DE625B541A7078D8004296E9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE625B551A7078D8004296E9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE625B791A7078F5004296E9 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				DE625BA11A707BE7004296E9 /* Lumberjack */,
+				DE625B931A70794A004296E9 /* HueSDK_iOS.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		DE625BA11A707BE7004296E9 /* Lumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				DE625BA21A707BE7004296E9 /* DDAbstractDatabaseLogger.h */,
+				DE625BA31A707BE7004296E9 /* DDAbstractDatabaseLogger.m */,
+				DE625BA41A707BE7004296E9 /* DDASLLogger.h */,
+				DE625BA51A707BE7004296E9 /* DDASLLogger.m */,
+				DE625BA61A707BE7004296E9 /* DDFileLogger.h */,
+				DE625BA71A707BE7004296E9 /* DDFileLogger.m */,
+				DE625BA81A707BE7004296E9 /* DDLog.h */,
+				DE625BA91A707BE7004296E9 /* DDLog.m */,
+				DE625BAA1A707BE7004296E9 /* DDTTYLogger.h */,
+				DE625BAB1A707BE7004296E9 /* DDTTYLogger.m */,
+				DE625BAC1A707BE7004296E9 /* Extensions */,
+			);
+			path = Lumberjack;
+			sourceTree = "<group>";
+		};
+		DE625BAC1A707BE7004296E9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DE625BAD1A707BE7004296E9 /* ContextFilterLogFormatter.h */,
+				DE625BAE1A707BE7004296E9 /* ContextFilterLogFormatter.m */,
+				DE625BAF1A707BE7004296E9 /* DispatchQueueLogFormatter.h */,
+				DE625BB01A707BE7004296E9 /* DispatchQueueLogFormatter.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE625B501A7078D8004296E9 /* Hue Quick Start iOS Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE625B731A7078D8004296E9 /* Build configuration list for PBXNativeTarget "Hue Quick Start iOS Swift" */;
+			buildPhases = (
+				DE625B4D1A7078D8004296E9 /* Sources */,
+				DE625B4E1A7078D8004296E9 /* Frameworks */,
+				DE625B4F1A7078D8004296E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hue Quick Start iOS Swift";
+			productName = "Hue Quick Start iOS Swift";
+			productReference = DE625B511A7078D8004296E9 /* Hue Quick Start iOS Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE625B491A7078D8004296E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 0730;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = KevinDew;
+				TargetAttributes = {
+					DE625B501A7078D8004296E9 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = DE625B4C1A7078D8004296E9 /* Build configuration list for PBXProject "Hue Quick Start iOS Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE625B481A7078D8004296E9;
+			productRefGroup = DE625B521A7078D8004296E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE625B501A7078D8004296E9 /* Hue Quick Start iOS Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE625B4F1A7078D8004296E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE625B5F1A7078D8004296E9 /* Main.storyboard in Resources */,
+				DE625B641A7078D8004296E9 /* LaunchScreen.xib in Resources */,
+				DE625B611A7078D8004296E9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE625B4D1A7078D8004296E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE625BB41A707BE7004296E9 /* DDLog.m in Sources */,
+				DE625BB21A707BE7004296E9 /* DDASLLogger.m in Sources */,
+				DE625BB91A707E59004296E9 /* ControlLightsViewController.swift in Sources */,
+				DE625B571A7078D8004296E9 /* AppDelegate.swift in Sources */,
+				DE8575771A7B0A0100FFED44 /* README.md in Sources */,
+				DE625BB71A707BE7004296E9 /* DispatchQueueLogFormatter.m in Sources */,
+				DE625BB11A707BE7004296E9 /* DDAbstractDatabaseLogger.m in Sources */,
+				DE625BB51A707BE7004296E9 /* DDTTYLogger.m in Sources */,
+				DE6712811A79B7A300ED6035 /* BridgeSelectionViewController.swift in Sources */,
+				DE625BB31A707BE7004296E9 /* DDFileLogger.m in Sources */,
+				DE67127D1A79B1B500ED6035 /* BridgePushLinkViewController.swift in Sources */,
+				DE625BB61A707BE7004296E9 /* ContextFilterLogFormatter.m in Sources */,
+				DE6712831A79B8EE00ED6035 /* LoadingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DE625B5D1A7078D8004296E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE625B5E1A7078D8004296E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE625B621A7078D8004296E9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE625B631A7078D8004296E9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE625B711A7078D8004296E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE625B721A7078D8004296E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE625B741A7078D8004296E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Hue Quick Start iOS Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hue Quick Start iOS Swift/Hue Quick Start iOS Swift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE625B751A7078D8004296E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Hue Quick Start iOS Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hue Quick Start iOS Swift/Hue Quick Start iOS Swift-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE625B4C1A7078D8004296E9 /* Build configuration list for PBXProject "Hue Quick Start iOS Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE625B711A7078D8004296E9 /* Debug */,
+				DE625B721A7078D8004296E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE625B731A7078D8004296E9 /* Build configuration list for PBXNativeTarget "Hue Quick Start iOS Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE625B741A7078D8004296E9 /* Debug */,
+				DE625B751A7078D8004296E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE625B491A7078D8004296E9 /* Project object */;
+}
