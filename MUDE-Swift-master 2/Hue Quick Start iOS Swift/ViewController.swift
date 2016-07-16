@@ -16,6 +16,7 @@ import AlamofireNetworkActivityIndicator
 var defaultCategories: [String] = ["Rap", "Country", "Classic"]
 
 var categories: [String] = []
+var lyrics = ""
 
 class ViewController: UIViewController{
     
@@ -55,6 +56,9 @@ class ViewController: UIViewController{
                     //let allMoviesData = moviesData["feed"]["entry"].arrayValue
                     print("---------------------------------")
                     print(songData)
+                    lyrics = songData[0]["snippet"].stringValue
+                    print("LYRICS: \(lyrics)")
+                    
                 }
             case .Failure(let error):
                 
