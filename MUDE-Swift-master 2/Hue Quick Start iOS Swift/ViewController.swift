@@ -65,31 +65,6 @@ class ViewController: UIViewController{
                 print(error)
             }
         }
-        
-        var apiToContact2 = "https://watson-api-explorer.mybluemix.net/tone-analyzer/api/v3/tone?version=2016-05-19&text="
-
-        let arrayInsert = lyrics.componentsSeparatedByString(" ")
-        lyrics = arrayInsert.joinWithSeparator("%20")
-        
-        apiToContact2 += lyrics
-        
-        Alamofire.request(.GET, apiToContact2).validate().responseJSON() { response in
-            switch response.result {
-            case .Success:
-                if let value = response.result.value {
-                    let moodData = JSON(value)
-                    //let allMoviesData = moviesData["feed"]["entry"].arrayValue
-                    print("---------------------------------")
-                    print(moodData)
-                    
-                }
-            case .Failure(let error):
-                
-                print(error)
-            }
-        }
-        
-        
 
     }
     

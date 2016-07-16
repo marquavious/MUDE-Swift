@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C41E0B491D3A034A00DAEACE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E0B481D3A034A00DAEACE /* ViewController.swift */; };
-		C4FC02551D3A3025000EA0E8 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = C4FC02541D3A3025000EA0E8 /* Cartfile */; };
 		D0147ED6BF3FBF136ACDB4F8 /* Pods_Hue_Quick_Start_iOS_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18184C5287F87424028A9937 /* Pods_Hue_Quick_Start_iOS_Swift.framework */; };
 		DE625B571A7078D8004296E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE625B561A7078D8004296E9 /* AppDelegate.swift */; };
 		DE625B5F1A7078D8004296E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE625B5D1A7078D8004296E9 /* Main.storyboard */; };
@@ -33,7 +32,6 @@
 		18184C5287F87424028A9937 /* Pods_Hue_Quick_Start_iOS_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hue_Quick_Start_iOS_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8688AE5B1D0553EE6E634B04 /* Pods-Hue Quick Start iOS Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hue Quick Start iOS Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hue Quick Start iOS Swift/Pods-Hue Quick Start iOS Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		C41E0B481D3A034A00DAEACE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C4FC02541D3A3025000EA0E8 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		C6992F71D885E7762A6C743B /* Pods-Hue Quick Start iOS Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hue Quick Start iOS Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hue Quick Start iOS Swift/Pods-Hue Quick Start iOS Swift.release.xcconfig"; sourceTree = "<group>"; };
 		DE625B511A7078D8004296E9 /* Hue Quick Start iOS Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hue Quick Start iOS Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE625B551A7078D8004296E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,7 +95,6 @@
 		DE625B481A7078D8004296E9 = {
 			isa = PBXGroup;
 			children = (
-				C4FC02541D3A3025000EA0E8 /* Cartfile */,
 				DE8575761A7B0A0100FFED44 /* README.md */,
 				DE625B791A7078F5004296E9 /* Framework */,
 				DE625B531A7078D8004296E9 /* Hue Quick Start iOS Swift */,
@@ -243,7 +240,6 @@
 			files = (
 				DE625B5F1A7078D8004296E9 /* Main.storyboard in Resources */,
 				DE625B641A7078D8004296E9 /* LaunchScreen.xib in Resources */,
-				C4FC02551D3A3025000EA0E8 /* Cartfile in Resources */,
 				DE625B611A7078D8004296E9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
