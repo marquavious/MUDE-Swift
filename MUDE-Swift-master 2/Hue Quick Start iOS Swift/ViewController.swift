@@ -19,14 +19,32 @@ var categories: [String] = []
 
 class ViewController: UIViewController{
     
+    @IBOutlet weak var songName: UITextField!
+    @IBOutlet weak var artistName: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        var artistName = "drake"
-        var songName = "views"
+            }
+    @IBAction func searchSong(sender: AnyObject) {
+        var name = ""
+        var artist = ""
         
-        let apiToContact = "http://api.lyricsnmusic.com/songs?api_key=[7f20218fb1ab86aff7aa7f9d25df56]&q=\(artistName)%20\(songName)"
+        if self.songName.text == "" || self.artistName.text == ""
+        {
+            artist = "drake"
+            name = "views"
+        }
+        else{
+            let arrayOne = songName.text!.componentsSeparatedByString(" ")
+            name = arrayOne.joinWithSeparator("+")
+            
+            let arrayTwo = artistName.text!.componentsSeparatedByString(" ")
+            artist = arrayTwo.joinWithSeparator("+")
+        }
+        
+        let apiToContact = "http://api.lyricsnmusic.com/songs?api_key=[7f20218fb1ab86aff7aa7f9d25df56]&q=\(artist)%20\(name)"
         
         // This code will call the iTunes top 25 movies endpoint listed above
         Alamofire.request(.GET, apiToContact).validate().responseJSON() { response in
@@ -43,6 +61,7 @@ class ViewController: UIViewController{
                 print(error)
             }
         }
+
     }
     
     override func didReceiveMemoryWarning() {

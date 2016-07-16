@@ -116,7 +116,7 @@
                                 <rect key="frame" x="199" y="326" width="79" height="30"/>
                                 <state key="normal" title="Let's Pulse!"/>
                                 <connections>
-                                    <segue destination="jUR-Cn-YCk" kind="show" id="Djd-9R-oUw"/>
+                                    <segue destination="Fba-lu-SVZ" kind="show" id="ZJh-7G-HVk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -199,9 +199,79 @@
             <point key="canvasLocation" x="372" y="339"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="0au-0w-MfY">
+            <objects>
+                <viewController id="Fba-lu-SVZ" customClass="ViewController" customModule="Hue_Quick_Start_iOS_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Agq-hh-OFD"/>
+                        <viewControllerLayoutGuide type="bottom" id="5aM-Z0-tHj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rT9-Xr-2Oq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Artist:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Sx-Sp-r1s">
+                                <rect key="frame" x="76" y="226" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hhc-ga-NLi">
+                                <rect key="frame" x="302" y="161" width="199" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="eVT-Ks-PgL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VfQ-B0-ni1">
+                                <rect key="frame" x="80" y="165" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHY-ie-9nj">
+                                <rect key="frame" x="272" y="367" width="57" height="30"/>
+                                <state key="normal" title="Let's Go"/>
+                                <connections>
+                                    <action selector="searchSong:" destination="Fba-lu-SVZ" eventType="touchUpInside" id="c9o-zq-e9s"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sXm-5Y-dvQ">
+                                <rect key="frame" x="302" y="222" width="199" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="bx4-cm-ydd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sXm-5Y-dvQ" firstAttribute="leading" secondItem="4Sx-Sp-r1s" secondAttribute="trailing" constant="40" id="6kf-Z9-RgJ"/>
+                            <constraint firstItem="VfQ-B0-ni1" firstAttribute="top" secondItem="Agq-hh-OFD" secondAttribute="bottom" constant="101" id="GLx-Nb-4dQ"/>
+                            <constraint firstItem="GHY-ie-9nj" firstAttribute="centerX" secondItem="rT9-Xr-2Oq" secondAttribute="centerX" id="RTN-a0-QHl"/>
+                            <constraint firstItem="Hhc-ga-NLi" firstAttribute="top" secondItem="Agq-hh-OFD" secondAttribute="bottom" constant="97" id="VDa-V8-8fd"/>
+                            <constraint firstItem="sXm-5Y-dvQ" firstAttribute="top" secondItem="Hhc-ga-NLi" secondAttribute="bottom" constant="31" id="a84-Bu-A0f"/>
+                            <constraint firstItem="Hhc-ga-NLi" firstAttribute="leading" secondItem="VfQ-B0-ni1" secondAttribute="trailing" constant="40" id="ii4-Hv-8YT"/>
+                            <constraint firstItem="4Sx-Sp-r1s" firstAttribute="leading" secondItem="VfQ-B0-ni1" secondAttribute="trailing" constant="-86" id="q4v-5M-uNV"/>
+                            <constraint firstItem="VfQ-B0-ni1" firstAttribute="leading" secondItem="rT9-Xr-2Oq" secondAttribute="leadingMargin" constant="60" id="tx0-j0-pSH"/>
+                            <constraint firstItem="4Sx-Sp-r1s" firstAttribute="top" secondItem="VfQ-B0-ni1" secondAttribute="bottom" constant="40" id="wgW-gW-hd2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="artistName" destination="sXm-5Y-dvQ" id="kq2-Bf-Ca4"/>
+                        <outlet property="songName" destination="Hhc-ga-NLi" id="4lb-gD-0ne"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q0Z-cI-VQY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="147" y="1065"/>
+        </scene>
+        <!--Old View Controller-->
         <scene sceneID="jNj-7E-Pii">
             <objects>
-                <viewController id="jUR-Cn-YCk" customClass="ViewController" customModule="Hue_Quick_Start_iOS_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Old View Controller" id="jUR-Cn-YCk" customClass="ViewController" customModule="Hue_Quick_Start_iOS_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KTy-lU-8nr"/>
                         <viewControllerLayoutGuide type="bottom" id="iFh-l1-GKN"/>
@@ -215,7 +285,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Rap" id="nef-cN-FHN">
-                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nef-cN-FHN" id="bvz-Az-0bq">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -234,7 +304,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Country" id="AhM-Uh-yij">
-                                        <rect key="frame" x="0.0" y="136" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="72" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AhM-Uh-yij" id="1z3-Fc-H1F">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -253,7 +323,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Classic" id="hRK-A7-5cc">
-                                        <rect key="frame" x="0.0" y="180" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="116" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hRK-A7-5cc" id="heP-Jq-uFM">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -283,7 +353,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w43-Ud-xe7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="487" y="1204"/>
+            <point key="canvasLocation" x="797" y="1186"/>
         </scene>
         <!--Bridge Selection View Controller-->
         <scene sceneID="WNe-tM-m7P">
