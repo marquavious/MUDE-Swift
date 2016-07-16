@@ -1,0 +1,6 @@
+framework module Pods_Hue_Quick_Start_iOS_Swift {
+  umbrella header "Pods-Hue Quick Start iOS Swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

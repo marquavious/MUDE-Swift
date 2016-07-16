@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C41E0B491D3A034A00DAEACE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C41E0B481D3A034A00DAEACE /* ViewController.swift */; };
+		D0147ED6BF3FBF136ACDB4F8 /* Pods_Hue_Quick_Start_iOS_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18184C5287F87424028A9937 /* Pods_Hue_Quick_Start_iOS_Swift.framework */; };
 		DE625B571A7078D8004296E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE625B561A7078D8004296E9 /* AppDelegate.swift */; };
 		DE625B5F1A7078D8004296E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE625B5D1A7078D8004296E9 /* Main.storyboard */; };
 		DE625B611A7078D8004296E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE625B601A7078D8004296E9 /* Images.xcassets */; };
@@ -28,7 +29,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18184C5287F87424028A9937 /* Pods_Hue_Quick_Start_iOS_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hue_Quick_Start_iOS_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8688AE5B1D0553EE6E634B04 /* Pods-Hue Quick Start iOS Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hue Quick Start iOS Swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hue Quick Start iOS Swift/Pods-Hue Quick Start iOS Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		C41E0B481D3A034A00DAEACE /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C6992F71D885E7762A6C743B /* Pods-Hue Quick Start iOS Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hue Quick Start iOS Swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hue Quick Start iOS Swift/Pods-Hue Quick Start iOS Swift.release.xcconfig"; sourceTree = "<group>"; };
 		DE625B511A7078D8004296E9 /* Hue Quick Start iOS Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hue Quick Start iOS Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE625B551A7078D8004296E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE625B561A7078D8004296E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,12 +68,30 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE625B941A70794A004296E9 /* HueSDK_iOS.framework in Frameworks */,
+				D0147ED6BF3FBF136ACDB4F8 /* Pods_Hue_Quick_Start_iOS_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		476590321F53AC9252213E33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18184C5287F87424028A9937 /* Pods_Hue_Quick_Start_iOS_Swift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D9A82475FB03417B13013C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8688AE5B1D0553EE6E634B04 /* Pods-Hue Quick Start iOS Swift.debug.xcconfig */,
+				C6992F71D885E7762A6C743B /* Pods-Hue Quick Start iOS Swift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DE625B481A7078D8004296E9 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +99,8 @@
 				DE625B791A7078F5004296E9 /* Framework */,
 				DE625B531A7078D8004296E9 /* Hue Quick Start iOS Swift */,
 				DE625B521A7078D8004296E9 /* Products */,
+				5D9A82475FB03417B13013C4 /* Pods */,
+				476590321F53AC9252213E33 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,9 +183,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE625B731A7078D8004296E9 /* Build configuration list for PBXNativeTarget "Hue Quick Start iOS Swift" */;
 			buildPhases = (
+				0B8027BFFA6435FBDAAEEFE2 /* [CP] Check Pods Manifest.lock */,
 				DE625B4D1A7078D8004296E9 /* Sources */,
 				DE625B4E1A7078D8004296E9 /* Frameworks */,
 				DE625B4F1A7078D8004296E9 /* Resources */,
+				F4E1EF6858666D420F79BD40 /* [CP] Embed Pods Frameworks */,
+				43384D56B9E215047280A39D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -218,6 +245,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B8027BFFA6435FBDAAEEFE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		43384D56B9E215047280A39D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hue Quick Start iOS Swift/Pods-Hue Quick Start iOS Swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4E1EF6858666D420F79BD40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hue Quick Start iOS Swift/Pods-Hue Quick Start iOS Swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DE625B4D1A7078D8004296E9 /* Sources */ = {
@@ -346,6 +421,7 @@
 		};
 		DE625B741A7078D8004296E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8688AE5B1D0553EE6E634B04 /* Pods-Hue Quick Start iOS Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -364,6 +440,7 @@
 		};
 		DE625B751A7078D8004296E9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6992F71D885E7762A6C743B /* Pods-Hue Quick Start iOS Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
