@@ -18,6 +18,11 @@ var defaultCategories: [String] = ["Rap", "Country", "Classic"]
 
 var categories: [String] = []
 var lyrics = ""
+var angerScore = ""
+var disgustScore = 0.0
+var fearScore = 0.0
+var joyScore = 0.0
+var sadnessScore = 0.0
 
 class ViewController: UIViewController{
     
@@ -88,6 +93,8 @@ class ViewController: UIViewController{
                                 
                                 // Work with JSON object.
                                 print(json)
+                                angerScore = json["document_tone"]!!["tone_categories"]!![0]["tones"]!![0]["score"]!!.stringValue
+                                print(angerScore)
                             }
                             catch {
                                 print("Problem serialising JSON object")
