@@ -18,11 +18,11 @@ var defaultCategories: [String] = ["Rap", "Country", "Classic"]
 
 var categories: [String] = []
 var lyrics = ""
-var angerScore = ""
-var disgustScore = 0.0
-var fearScore = 0.0
-var joyScore = 0.0
-var sadnessScore = 0.0
+var angerScore = ("", "angerScore")
+var disgustScore = ("", "disgustScore")
+var fearScore = ("", "fearScore")
+var joyScore = ("", "joyScore")
+var sadnessScore = ("", "sadnessScore")
 
 class ViewController: UIViewController{
     
@@ -93,8 +93,52 @@ class ViewController: UIViewController{
                                 
                                 // Work with JSON object.
                                 print(json)
-                                angerScore = json["document_tone"]!!["tone_categories"]!![0]["tones"]!![0]["score"]!!.stringValue
+                                angerScore.0 = json["document_tone"]!!["tone_categories"]!![0]["tones"]!![0]["score"]!!.stringValue
+                                disgustScore.0 = json["document_tone"]!!["tone_categories"]!![0]["tones"]!![1]["score"]!!.stringValue
+                                fearScore.0 = json["document_tone"]!!["tone_categories"]!![0]["tones"]!![2]["score"]!!.stringValue
+                                joyScore.0 = json["document_tone"]!!["tone_categories"]!![0]["tones"]!![3]["score"]!!.stringValue
+                                sadnessScore.0 = json["document_tone"]!!["tone_categories"]!![0]["tones"]!![4]["score"]!!.stringValue
                                 print(angerScore)
+                                print(disgustScore)
+                                
+                                
+                                
+                                
+                                var array = [angerScore, disgustScore, fearScore, joyScore, sadnessScore]
+                                
+                                array = array.sort{
+                                    $0 < $1
+                                }
+                            
+                                print(array)
+                                
+                                var moodsChosen: [(String, String)] = []
+                                var x = 4
+                                while x > 1{
+                                    moodsChosen.append(array[x])
+                                    x -= 1
+                                }
+                                print("MOODS CHOSEN: \(moodsChosen)")
+                                
+                                for mood in moodsChosen{
+                                    if mood.1 == "angerScore"{
+                                    //set lighitng sit
+                                        self.assignColor(angerScore.1, bulb: 0)
+                                    }
+                                    else if mood.1 == "disgustScore"{
+                                        self.assignColor(angerScore.1, bulb: 0)
+                                    }
+                                    else if mood.1 == "fearScore"{
+                                        self.assignColor(angerScore.1, bulb: 0)
+                                    }
+                                    else if mood.1 == "joyScore"{
+                                        self.assignColor(angerScore.1, bulb: 0)
+                                    }
+                                    else{
+                                        self.assignColor(angerScore.1, bulb: 0)
+                                    }
+                                    
+                                }
                             }
                             catch {
                                 print("Problem serialising JSON object")
@@ -129,28 +173,11 @@ class ViewController: UIViewController{
 
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-}
-
-
-//Generes Tab
-
-extension ViewController: UITableViewDelegate
-{
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let selectedCell:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
-        selectedCell.contentView.backgroundColor = UIColor.darkGrayColor()
-        
-        let currentCell = tableView.cellForRowAtIndexPath(indexPath) as UITableViewCell!
-        
-        print("Test: ")
+    func assignColor(input: String, bulb: Int){
         let cache = PHBridgeResourcesReader.readBridgeResourcesCache()
         let bridgeSendAPI = PHBridgeSendAPI()
         let maxHue = 65000
+        
         for light in cache!.lights!.values {
             // don't update state of non-reachable lights
             if light.lightState!.reachable == 0 {
@@ -178,8 +205,61 @@ extension ViewController: UITableViewDelegate
                 }
                 //self.randomLightsButton?.enabled = true
             })
-            
         }
+
+    }
+  
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+}
+
+
+//Generes Tab
+
+extension ViewController: UITableViewDelegate
+{
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let selectedCell:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!
+        selectedCell.contentView.backgroundColor = UIColor.darkGrayColor()
+        
+        let currentCell = tableView.cellForRowAtIndexPath(indexPath) as UITableViewCell!
+        
+        print("Test: ")
+//        let cache = PHBridgeResourcesReader.readBridgeResourcesCache()
+//        let bridgeSendAPI = PHBridgeSendAPI()
+//        let maxHue = 65000
+//        for light in cache!.lights!.values {
+//            // don't update state of non-reachable lights
+//            if light.lightState!.reachable == 0 {
+//                continue
+//            }
+//            
+//            let lightState = PHLightState()
+//            
+//            
+//            //        if light.type.value == DIM_LIGHT.rawValue {
+//            //        // Lux bulbs just get a random brightness
+//            //        lightState.brightness = Int(arc4random()) % 254
+//            //      } else {
+//            lightState.hue = Int(arc4random()) % maxHue
+//            lightState.brightness = 254
+//            lightState.saturation = 254
+//            //}
+//            
+//            // Send lightstate to light
+//            bridgeSendAPI.updateLightStateForId(light.identifier, withLightState: lightState, completionHandler: { (errors: [AnyObject]!) -> () in
+//                
+//                if errors != nil {
+//                    let message = String(format: NSLocalizedString("Errors %@", comment: ""), errors)
+//                    NSLog("Response: \(message)")
+//                }
+//                //self.randomLightsButton?.enabled = true
+//            })
+//            
+//        }
         
         
         print(defaultCategories[indexPath.row])
